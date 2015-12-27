@@ -25,7 +25,6 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 * `x_train`, `y_train`, `subject_train`, `x_test`, `y_test`, `subject_test` are all variables used to read in the raw files.
 * `x_data`, `y_data`, `subject_data` are variables used to merge the components of x, y, and subject data.
 * `features` reads in the data from `features.txt`which contains the column names for `x_data`.
-* `features_mean_std` is a subset of `features` that contains all of the columns with mean() or std().
+* `extract_features` is a subset of `features` that contains all of the columns with mean() or std().
 * `activity_labels` reads in the data from `activity_labels.txt` which contains the correct names for `y_data`.
-* `final_data` merges `x_data`, `y_data`, and `subject_data` into a single dataset.
-* `avg_data` is more compact version of `final_data` by averaging the columns based on subject and activity. This is later printed to a `.txt` file called `avg_data.txt`.
+* `alldata` merges `x_data`, `y_data`, and `subject_data` into a single dataset.
